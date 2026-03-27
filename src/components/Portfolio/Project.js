@@ -41,10 +41,6 @@ const Project = (props) => {
             See Live
             <img src={serverLogo} className="inline w-5 mb-1 ml-2" alt="server-icon" />
           </a>
-          {/* <a target="_blank" href={github} className="px-5 py-2 font-medium rounded bg-lightBlueColor text-md text-skyColor hover:bg-secondaryColor hover:text-primaryColor" rel="noreferrer">
-            See Source
-            <img src={githubLogo} className="inline w-5 mb-1 ml-2" alt="github-icon" />
-          </a> */}
         </div>
       </div>
     </motion.div>
