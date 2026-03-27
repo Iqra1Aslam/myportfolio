@@ -24,6 +24,7 @@
   "max-len": "off",
   "quotes": "off",
   "no-unused-vars": "warn",
+   "no-console": "off",
   "no-multiple-empty-lines": "off",
 
   // Optional relaxations
