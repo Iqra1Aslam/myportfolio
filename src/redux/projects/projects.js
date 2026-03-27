@@ -1,4 +1,3 @@
-import chatbotApp from '../../assets/images/projects/chatbot.png';
 import Memes from '../../assets/images/projects/memes.png';
 import countfizz from '../../assets/images/countfizz.png';
 import clipcraftor from '../../assets/images/clipcraftor.png';
