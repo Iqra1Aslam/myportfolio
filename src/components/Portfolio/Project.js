@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import serverLogo from '../../assets/images/server-solid.svg';
+
 const Project = (props) => {
   const {
     data: {
