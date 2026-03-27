@@ -5,7 +5,7 @@ import serverLogo from '../../assets/images/server-solid.svg';
 const Project = (props) => {
   const {
     data: {
-      id, image, title, details, tech, live,   
+      id, image, title, details, tech, live, 
     },
   } = props;
   let odd;
