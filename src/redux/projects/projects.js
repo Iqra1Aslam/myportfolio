@@ -10,7 +10,7 @@ const initialState = [
     details:
     "A modern learning platform where students can complete lessons, earn certificates, and download worksheets as PDFs. Includes a progress dashboard to track student performance, completed lessons, and detailed analytics. Features a global leaderboard and automated weekly reports to monitor rankings and engagement, along with email sharing capabilities.",
     tech: ["React", "Node.js", "Express", "MongoDB", "React-PDF"],
-    live: "https://www.countfizz.com"
+    live: "https://www.countfizz.com",
   },
   {
     id: 1,
