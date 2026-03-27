@@ -1,16 +1,28 @@
 import chatbotApp from '../../assets/images/projects/chatbot.png';
 import Memes from '../../assets/images/projects/memes.png';
+import countfizz from '../../assets/images/countfizz.png';
+import clipcraftor from '../../assets/images/clipcraftor.png';
 // initial-state
 const initialState = [
   {
     id: 0,
-    title: 'ChatBot App',
-    image: chatbotApp,
+    title: "Countfizz",
+    image: countfizz, // add your screenshot
     details:
-      'This ChatBot app allows users to choose between AI-powered replies or manual review. It offers a real-time chat experience that feels like talking to a smart assistant. Users begin by selecting their gender, then choose their preferred chat mode, making the interaction more personalized. The app is live and designed to be simple, interactive, and user-friendly while combining AI with everyday usability.',
-    live: 'https://chat-bot-app-flax.vercel.app/',
-    github: 'https://github.com/Iqra1Aslam/chatBotApp',
-    tech: ['JavaScript', 'React', 'AIModel', 'Tailwind'],
+    "A modern learning platform where students can complete lessons, earn certificates, and download worksheets as PDFs. Includes a progress dashboard to track student performance, completed lessons, and detailed analytics. Features a global leaderboard and automated weekly reports to monitor rankings and engagement, along with email sharing capabilities.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "React-PDF"],
+    live: "https://www.countfizz.com",
+    github: "https://github.com/yourusername/project",
+  },
+  {
+    id: 1,
+    title: "ClipCraftor",
+    image: clipcraftor, // add your screenshot
+    details:
+    "A video generation platform that creates promo videos from images and clips using animations, transitions, and background music. Designed with optimized processing pipelines, including multithreading for faster rendering and rate limiting to ensure system stability under high load. Supports efficient cloud-based storage and delivery.",
+    tech: ["Next.js", "Flask", "Python", "Cloud Storage"],
+    live: "https://www.clipcraftor.com", // add link if available
+    github: "https://github.com/yourusername/clipcraftor",
   },
   {
     id: 9,
