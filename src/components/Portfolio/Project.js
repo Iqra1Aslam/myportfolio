@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 import serverLogo from '../../assets/images/server-solid.svg';
-import githubLogo from '../../assets/images/github-logo.svg';
-
 const Project = (props) => {
   const {
     data: {
@@ -58,7 +56,6 @@ Project.propTypes = {
     title: PropTypes.string,
     details: PropTypes.string,
     live: PropTypes.string,
-    github: PropTypes.string,
     tech: PropTypes.arrayOf(PropTypes.string),
     image: PropTypes.string,
   }).isRequired,
