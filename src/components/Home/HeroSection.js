@@ -10,14 +10,14 @@ const HeroSection = () => (
     initial={{ x: '-100vw' }}
     animate={{ x: -0 }}
     transition={{ duration: 1 }}
-    className="flex flex-col items-center gap-10 md:ml-4 md:flex-row md:gap-96"
+    className="flex flex-col items-center gap-10 md:flex-row md:gap-20 lg:gap-32"
   >
     <div className="md:order-1">
       {/* <img src={profilePicture} alt="profile" className="h-64 rounded-full md:h-80" /> */}
     </div>
     <div className="text-skyColor">
       <p className="text-base text-secondaryColor">Hello!</p>
-      <h1 className="text-4xl text-secondaryColor md:text-5xl">I&apos;m Iqra Aslam</h1>
+      <h1 className="text-4xl text-secondaryColor md:text-5xl lg:text-6xl">I&apos;m Iqra Aslam</h1>
       {
           fields.map((field) => (
             <div key={field} className="flex gap-4 mt-3">

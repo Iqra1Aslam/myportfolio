@@ -14,8 +14,8 @@ const ContactInfo = () => (
       <h3 className="text-2xl md:text-4xl">Get in touch</h3>
       <div className="w-1/4 mb-3 ml-3 border-b-2 about-hr md:ml-5 border-secondaryColor" />
     </div>
-    <div className="mt-8 ml-4 md:flex md:gap-12 md:ml-1">
-      <p className="text-base md:w-1/3 text-skyColor">
+    <div className="mt-8 ml-4 md:flex md:gap-8 lg:gap-12 md:ml-1">
+      <p className="text-base md:w-1/2 lg:w-1/3 text-skyColor">
         {' '}
         If you have an app idea you&apos;d like to develop, a feature that
         needs building, or a project that requires coding, I&apos;m here to help.
@@ -25,11 +25,11 @@ const ContactInfo = () => (
         I really enjoy collaborating with other developers. If you&apos;re seeking a
         project partner, let&apos;s grab a coffee and chat about what we can create together.
       </p>
-      <div className="mt-4 md:w-1/5 md:mt-0">
+      <div className="mt-4 md:w-1/4 lg:w-1/5 md:mt-0">
         <h4 className="mb-4 text-2xl">Contacts</h4>
         <a href="mailto: contact@thecodechaser.com" className="text-base text-skyColor hover:text-secondaryColor">hafizaiqraaslam1@gmail.com</a>
       </div>
-      <div className="mt-4 md:w-1/5 md:mt-0">
+      <div className="mt-4 md:w-1/4 lg:w-1/5 md:mt-0">
         <h4 className="mb-4 text-2xl">Social Media</h4>
         <div className="flex gap-5">
           <a aria-label="Save" target="_blank" href="https://github.com/Iqra1Aslam" rel="noreferrer"><i className="text-3xl lab la-github text-skyColor hover:text-secondaryColor" /></a>

@@ -26,7 +26,7 @@ const AboutMe = () => (
       <h2 className="text-2xl md:text-4xl">About Me</h2>
       <div className="w-3/5 mb-3 border-b-2 border-secondaryColor hr-about" />
     </div>
-    <div className="flex flex-col gap-5 mt-5 ml-4 mr-5 text-base md:flex-row text-skyColor md:ml-1 about-text">
+    <div className="flex flex-col gap-5 mt-5 ml-4 mr-5 text-base md:flex-row md:gap-10 lg:gap-20 text-skyColor md:ml-1 about-text">
       <div className="flex flex-col gap-5 md:mt-3">
         <p>
           Hi there! I&apos;m Iqra Aslam, but you might know me as
@@ -61,7 +61,7 @@ const AboutMe = () => (
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1, duration: 0.8 }}
-      className="flex flex-col gap-4 mt-2 ml-4 md:flex-row md:gap-56 md:ml-2"
+      className="flex flex-col gap-4 mt-2 ml-4 md:flex-row md:gap-10 lg:gap-20 md:ml-2"
     >
       { stacks.map((stack) => (
         <div key={stack.name}>

@@ -61,7 +61,7 @@ const ContactForm = () => {
       initial={{ x: '-100vw' }}
       animate={{ x: -0 }}
       transition={{ duration: 1 }}
-      className="flex flex-col mt-10 items-center md:mr-52"
+      className="flex flex-col mt-10 items-center md:mr-20 lg:mr-32"
     >
       <h3 className="text-xl font-bold text-skyColor  mb-4">Let&apos;s Chat</h3>
       <div className="flex flex-col gap-4">
@@ -73,7 +73,7 @@ const ContactForm = () => {
           onChange={(e) => setName(e.target.value)}
           maxLength="30"
           placeholder="Name"
-          className="w-72 md:w-80 p-2 rounded text-primaryColor
+          className="w-72 md:w-80 lg:w-96 p-2 rounded text-primaryColor
       focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
         <input
@@ -83,7 +83,7 @@ const ContactForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
-          className="w-72 md:w-80 p-2 rounded text-primaryColor
+          className="w-72 md:w-80 lg:w-96 p-2 rounded text-primaryColor
         focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
         <textarea
@@ -94,7 +94,7 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
           maxLength="500"
           placeholder="Write your message here"
-          className="w-72 md:w-80 p-2 rounded text-primaryColor
+          className="w-72 md:w-80 lg:w-96 p-2 rounded text-primaryColor
           focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
         {

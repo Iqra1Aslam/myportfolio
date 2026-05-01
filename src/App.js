@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="inner-body">
+      <div className="inner-body md:pl-20">
         <Routes>
           <Route
             path="*"
