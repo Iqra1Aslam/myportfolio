@@ -5,13 +5,20 @@ import codeSnipped from '../../assets/images/code-snippet.png';
 
 const stacks = [
   {
-    name: 'Front end development', values: ['React JS', 'ReactNative', 'JavaScript', 'HTML & CSS', 'Tailwind'],
+    name: 'Front end development',
+    values: ['React.js', 'React Native', 'JavaScript', 'HTML & CSS', 'Tailwind CSS', 'Redux'],
   },
   {
-    name: 'Back end development', values: ['Node.js', 'Express.js', 'MongoDB', 'SQL'],
+    name: 'Back end development',
+    values: ['Node.js', 'Express.js', 'MongoDB', 'MySQL', 'FastAPI', 'REST APIs'],
   },
   {
-    name: 'Tools', values: ['Vercel', 'Github & Git', 'Postman', 'VS Code'],
+    name: 'Blockchain & AI',
+    values: ['Solana', 'Rust & Anchor', 'Web3.js', 'Smart Contracts', 'LLMs', 'Hugging Face'],
+  },
+  {
+    name: 'Tools',
+    values: ['Git & GitHub', 'Firebase', 'Socket.IO', 'Postman', 'VS Code', 'Vercel'],
   },
 ];
 
@@ -26,27 +33,46 @@ const AboutMe = () => (
       <h2 className="text-2xl md:text-4xl">About Me</h2>
       <div className="w-3/5 mb-3 border-b-2 border-secondaryColor hr-about" />
     </div>
+
     <div className="flex flex-col gap-5 mt-5 ml-4 mr-5 text-base md:flex-row md:gap-10 lg:gap-20 text-skyColor md:ml-1 about-text">
       <div className="flex flex-col gap-5 md:mt-3">
         <p>
-          Hi there! I&apos;m Iqra Aslam, but you might know me as
+          Hi there! I&apos;m Iqra Aslam, a passionate
           {' '}
-          <span className="text-secondaryColor">thecodechaser</span>
-          . I&apos;m  currently working as a Blockchain Web Developer at&nbsp;
-          <a href="https://sabasoftgames.com/" target="_blank" className="text-secondaryColor" rel="noreferrer">SabaSoftgames</a>
-          , where I combine my skills in web technologies and blockchain
-          to build secure and scalable applications. I&apos;m also a passionate
-          Web &amp; Mobile Developer with experience in React Native and the MERN stack.
+          <span className="text-secondaryColor">
+            Full-Stack Developer
+          </span>
+          {' '}
+          with hands-on experience building scalable web and mobile applications. I&apos;m currently working as an
+          {' '}
+          <span className="text-secondaryColor">
+            AI & Full-Stack Developer
+          </span>
+          {' '}
+          at
+          {' '}
+          <a
+            href="https://sabasoftgames.com/"
+            target="_blank"
+            className="text-secondaryColor"
+            rel="noreferrer"
+          >
+            SabaSoft Games Studio
+          </a>
+          , where I built a full MERN-stack learning platform for Grades 1–5 featuring gamified quizzes, voice-based storytelling, and real-time progress tracking.
         </p>
         <p>
-          I enjoy tackling challenging coding problems because they keep things interesting,
-          which makes me a pretty good problem solver. When I have some free time, I usually
-          have a hard time deciding between solving algorithms or learning about astronomy—but
-          somehow I manage to do a bit of both.
+          Before that, I worked as a
           {' '}
+          <span className="text-secondaryColor">
+            Blockchain Web Developer
+          </span>
+          {' '}
+          at SabaSoft Games Studio, where I developed smart contracts in Rust &amp; Anchor and shipped a live Solana dApp. I love solving real problems through code — whether that&apos;s integrating AI with Gemini and LLMs, building real-time apps with Socket.IO, or crafting smooth React interfaces. When I&apos;m not coding, I&apos;m probably exploring how AI is reshaping the world.
           <img src={personJuggling} alt="person-juggling" className="w-16 mt-4" />
         </p>
       </div>
+
       <motion.img
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -56,14 +82,18 @@ const AboutMe = () => (
         className="rounded-md code-snippet"
       />
     </div>
-    <h3 className="mt-5 ml-4 text-lg font-bold text-secondaryColor md:ml-1">Here are few of my stacks I&apos;ve been working with recently:</h3>
+
+    <h3 className="mt-5 ml-4 text-lg font-bold text-secondaryColor md:ml-1">
+      Here are a few of my stacks I&apos;ve been working with recently:
+    </h3>
+
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1, duration: 0.8 }}
       className="flex flex-col gap-4 mt-2 ml-4 md:flex-row md:gap-10 lg:gap-20 md:ml-2"
     >
-      { stacks.map((stack) => (
+      {stacks.map((stack) => (
         <div key={stack.name}>
           <h3 className="text-lg font-medium">{stack.name}</h3>
           {stack.values.map((value) => (
