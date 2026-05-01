@@ -19,7 +19,7 @@ const Project = (props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1, duration: 0.8 }}
-      className={`flex flex-col md:flex-row project-card ${id === 5 ? 'mt-16' : 'mt-24'} mx-4 md:mx-0 p-3 rounded-md shadow shadow-lightBlueColor md:gap-5 lg:gap-10 w-full max-w-full overflow-hidden min-w-0`}
+      className={`flex flex-col md:flex-row project-card ${id === 5 ? 'mt-16' : 'mt-24'} mx-auto w-full max-w-full md:max-w-4xl lg:max-w-5xl p-3 rounded-md shadow shadow-lightBlueColor md:gap-5 lg:gap-10 overflow-hidden min-w-0`}
     >
       <img
         src={image}
