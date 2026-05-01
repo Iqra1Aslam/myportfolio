@@ -19,19 +19,19 @@ const Project = (props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1, duration: 0.8 }}
-      className={`md:flex project-card ${id === 5 ? 'mt-16' : 'mt-24'} mx-4 md:mx-0 p-3 rounded-md shadow shadow-lightBlueColor md:gap-5 lg:gap-10`}
+      className={`flex flex-col md:flex-row project-card ${id === 5 ? 'mt-16' : 'mt-24'} mx-4 md:mx-0 p-3 rounded-md shadow shadow-lightBlueColor md:gap-5 lg:gap-10 w-full max-w-full`}
     >
       <img
         src={image}
         alt="project preview"
-        className={`w-full ${odd ? 'md:order-1' : 'md:order-0'} rounded-md card-img md:ml-0 `}
+        className={`w-full max-w-full ${odd ? 'md:order-1' : 'md:order-0'} rounded-md card-img md:ml-0`}
       />
       <div>
         <h3 className={`text-skyColor ${odd ? 'md:text-left' : 'md:text-right'} mt-3 md:mt-0 mb-4 text-2xl md:text-3xl ml-4 md:ml-0`}>{title}</h3>
-        <p className="p-5 ml-4 mr-4 text-base font-medium rounded bg-lightBlueColor text-skyColor md:ml-0 md:mr-0">
+        <p className="w-full box-border p-5 ml-4 mr-4 text-base font-medium rounded bg-lightBlueColor text-skyColor md:ml-0 md:mr-0">
           {details}
         </p>
-        <div className={`flex ${odd ? 'md:justify-center' : 'md:justify-end'} gap-2 text-skyColor mt-5 ml-4 md:ml-0`}>
+        <div className={`flex ${odd ? 'md:justify-center' : 'md:justify-end'} gap-2 text-skyColor mt-5 ml-4 md:ml-0 flex-wrap`}>
           {tech.map((item) => (
             <p key={item} className="px-2 py-1 border rounded border-lightBlueColor text-skyColor">{item}</p>
           ))}
